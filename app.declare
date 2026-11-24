@@ -1,0 +1,13 @@
+App [
+  width = 400,
+  height = 140,
+  fill = darkslategray,
+  textColor = whitesmoke,
+  count: number = 0,             // وضعیت واکنشی (Reactive State)
+  onClick() { count = count + 1 }, // با کلیک هر جای صفحه اجرا می‌شود
+  Text [
+    x = center,
+    y = center,                  // همیشه در مرکز می‌ماند، حتی هنگام تغییر اندازه
+    text = { `Clicked ${count} times` } // با تغییر count، این متن دوباره اجرا می‌شود
+  ]
+]
